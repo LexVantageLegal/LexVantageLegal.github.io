@@ -2,6 +2,91 @@
 <html lang="en">
   <head>
     <title>LexVantage Legal</title>
+
+    <style>
+            /* Style for the overlay */
+            #disclaimer-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+            }
+
+            /* Style for the popup box */
+            #disclaimer-popup {
+                background: #fff;
+                padding: 20px;
+                max-width: 900px;
+                width: 90%;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                text-align: left;
+                font-family: Arial, sans-serif;
+            }
+
+            #disclaimer-popup h2 {
+                margin-top: 0;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            #disclaimer-popup p {
+                font-size: 12px;
+                line-height: 1.5;
+                text-align: justify
+            }
+
+            /* Style for the buttons */
+            #disclaimer-buttons {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            #disclaimer-buttons button {
+                background: #4CAF50;
+                color: #fff;
+                padding: 10px 20px;
+                margin: 0 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            #disclaimer-buttons .exit-button {
+                background: #f44336;
+            }
+
+            /* Hide the main content until disclaimer is accepted */
+            #main-content {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Disclaimer Overlay -->
+        <div id="disclaimer-overlay">
+            <div id="disclaimer-popup">
+                <h2>DISCLAIMER</h2>
+                <p>As per the rules of the Bar Council of India, law firms are not permitted to solicit work or advertise in any form. This website is intended solely to provide general information about our firm, its areas of practice, and for informational purposes only. It is not intended to be an advertisement or solicitation of services in any way.</p>
+                <p>By clicking "I Agree" below, you acknowledge that you are visiting this website on your own accord and for information purposes only. You further acknowledge that there has been no solicitation, invitation, or inducement of any sort whatsoever from this firm or any of its members to solicit any work through this website.</p>
+                <p>This website does not create any advocate-client relationship, nor does it constitute legal advice. The firm disclaims all liability for any action taken by the user based on the information available on this website.</p>
+                <p>If you understand and agree to the above, please click "I Agree" to enter the website.</p>
+                <div id="disclaimer-buttons">
+                    <button onclick="acceptDisclaimer()">I Agree</button>
+                    <button class="exit-button" onclick="exitSite()">Exit</button>
+                </div>
+            </div>
+        </div>
+
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -438,7 +523,21 @@
       </div>
     </footer>
 
+    <script>
+            // Function to handle "I Agree" button click
+            function acceptDisclaimer() {
+                // Hide the disclaimer overlay
+                document.getElementById("disclaimer-overlay").style.display = "none";
+                // Show the main content
+                document.getElementById("main-content").style.display = "block";
+            }
 
+            // Function to handle "Exit" button click
+            function exitSite() {
+                // Redirect to another page or simply close the tab
+                window.location.href = "https://www.google.com"; // Redirect to Google or a custom URL
+            }
+        </script>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
