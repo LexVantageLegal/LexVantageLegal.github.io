@@ -59,92 +59,149 @@
 <br>
 <br>
 <br>
-    <section class="ftco-section ftco-no-pt ftco-no-pb" style="padding-top: 20px; padding-bottom: 20px;">
-    <div class="container">
-        <div class="row d-flex">
-            <div class="col-md-6 d-flex">
-                <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url(images/LexAbout.png);">
-                    <a href="#" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-                        <span class="icon-play"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 pl-md-5">
-                <div class="row justify-content-start pt-2 pb-2">
-                    <div class="col-md-12 heading-section ftco-animate">
-                        <span class="subheading">Welcome to LexVantage Legal</span>
-                        <h2 class="mb-3">Your Justice, Our Commitment</h2>
-                        <p>At LexVantage Legal, we’re dedicated to defending your rights with integrity and focus. Our experienced team offers tailored strategies to help you navigate complex legal challenges with confidence.</p>
-                        <div class="tabulation-2 mt-3">
-                            <ul class="nav nav-pills nav-fill d-md-flex d-block">
-                                <li class="nav-item mb-md-0 mb-2">
-                                    <a class="nav-link active py-2" data-toggle="tab" href="#home1">Our Mission</a>
-                                </li>
-                                <li class="nav-item px-lg-2 mb-md-0 mb-2">
-                                    <a class="nav-link py-2" data-toggle="tab" href="#home2">Our Vision</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">Our Value</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content bg-light rounded mt-2">
-                                <div class="tab-pane container p-0 active" id="home1">
-                                    <p>To protect your rights and provide clear, strategic legal guidance at every stage.</p>
-                                </div>
-                                <div class="tab-pane container p-0 fade" id="home2">
-                                    <p>A world where justice is accessible, and every client receives fair, and professional representation.</p>
-                                </div>
-                                <div class="tab-pane container p-0 fade" id="home3">
-                                    <p>Ethics, trust, and client-focused service guide everything we do. At LexVantage Legal, your success is our priority.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="years d-flex mt-3">
-                            <h4>
-                                <span class="number mr-2" data-number="6">0</span>
-                                <span>Years of Experience</span>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .breadcrumbs {
+        text-align: center;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .section img {
+        width: 40%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .section:hover {
+    transform: scale(1.05); /* Slightly scale up the section */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.section:hover .text h2 {
+    color: #afa939; /* Change heading color on hover */
+}
+
+    .section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .text {
+        width: 60%;
+        padding: 0 20px;
+    }
+
+    h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555;
+        text-align: justify;
+    }
+
+    @media screen and (max-width: 768px) {
+        .section {
+            flex-direction: column;
+        }
+
+        .section img, .text {
+            width: 100%;
+            padding: 0;
+        }
+
+        .section:nth-child(odd) {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <!-- About Us Section -->
+    <div class="section">
+        <div class="text">
+            <h2>About Us</h2>
+            <p>
+              Welcome to LexVantage Legal. We specialize in providing exceptional legal services tailored to the diverse needs of our clients. With years of experience and a proven track record, we have established ourselves as a trusted partner for individuals and businesses seeking comprehensive legal counsel. Our dedicated team combines in-depth legal knowledge with a client-centric approach, ensuring that each case receives personalized attention and strategic solutions. From resolving complex disputes to navigating regulatory challenges, we strive to empower our clients with the tools and guidance needed to succeed in an increasingly dynamic legal landscape.<br><br>
+              Our commitment to excellence goes beyond delivering results. We adhere to the highest standards of integrity, professionalism, and innovation, fostering a culture of trust and reliability. By leveraging the latest legal technologies and methodologies, we continuously enhance our services to meet evolving client expectations. Our goal is to build enduring relationships, acting as a dependable ally through every legal journey. At the heart of our practice lies a passion for justice and a dedication to making a meaningful impact in the lives of those we serve.
+            </p>
+        </div>
+        <img src="images/About Us.png" alt="About Us">
+    </div>
+
+    <!-- Why Us Section -->
+    <div class="section">
+        <img src="images/Why Us.png" alt="Why Choose Us">
+        <div class="text">
+            <h2>Why Us</h2>
+            <p>
+                LexVantage Legal stands out for its unwavering commitment to excellence, offering a personalized approach that goes beyond just legal representation. We take the time to truly understand the unique needs and challenges of our clients, ensuring that every strategy we propose is tailored for optimal results. By choosing us, you're not just hiring a team of experts, but partnering with professionals who value transparency, reliability, and the pursuit of tangible outcomes. We are driven by results and dedicated to building lasting relationships based on trust and effective communication. Our approach is designed to simplify complex legal matters, guiding clients through every step with clarity and confidence, always with their best interests at the forefront. With a blend of deep industry knowledge, innovative problem-solving, and a relentless focus on client success, we provide the strategic support needed to navigate today’s fast-evolving legal landscape.
+            </p>
         </div>
     </div>
-  </section>
-  <br>
-  <br>
 
-		<section class="ftco-consultation ftco-section ftco-no-pt ftco-no-pb img" style="background-image: url(images/bg_2.jpg);">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row d-md-flex justify-content-end">
-    			<div class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white">
-    				<span class="subheading">Booking an Appointment</span>
-    				<h2 class="mb-4">Free Consultation</h2>
-    				<form action="#" class="consultation">
-	            <div class="form-group">
-	              <input type="text" class="form-control" placeholder="Your Name">
-	            </div>
-	            <div class="form-group">
-	              <input type="text" class="form-control" placeholder="Your Email">
-	            </div>
-	            <div class="form-group">
-	              <input type="text" class="form-control" placeholder="Subject">
-	            </div>
-	            <div class="form-group">
-	              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-	            </div>
-	            <div class="form-group">
-	              <input type="submit" value="Send message" class="btn btn-dark py-3 px-4">
-	            </div>
-	          </form>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+    <!-- Our Mission Section -->
+    <div class="section">
+        <div class="text">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to empower individuals and businesses by providing unparalleled legal expertise. We aim to deliver justice, advocate for rights, and foster long-term partnerships with our clients. By ensuring personalized and diligent legal services, we work to create meaningful and lasting impacts on the lives of those we serve. Our commitment to integrity, professional growth, and excellence in all our endeavors allows us to address both the immediate needs and long-term goals of our clients, ensuring they feel supported every step of the way. We believe in offering not just legal solutions, but also guidance that can help clients navigate complexities with confidence.
+            </p>
+        </div>
+        <img src="images/Our Mission.png" alt="Our Mission">
+    </div>
 
+    <!-- Our Vision Section -->
+    <div class="section">
+        <img src="images/Our Vision.png" alt="Our Vision">
+        <div class="text">
+            <h2>Our Vision</h2>
+            <p>
+                Our vision is to be recognized as a trusted leader in the legal industry, inspiring confidence and setting benchmarks through our innovative approach and unwavering commitment to client success. We aim to redefine industry standards by combining legal expertise with cutting-edge strategies, empowering clients to achieve their goals with certainty and efficiency. By fostering a culture of continuous growth and excellence, we strive to build lasting partnerships and contribute meaningfully to the advancement of justice, integrity, and professionalism in the legal field.
+            </p>
+        </div>
+    </div>
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <!-- Our Values Section -->
+    <div class="section">
+        <div class="text">
+            <h2>Our Values</h2>
+            <p>
+                Integrity, excellence, and empathy are at the core of everything we do. We believe in making a positive impact on our clients, community, and society by adhering to these values. By upholding the highest ethical standards, we foster an environment of trust and respect, ensuring that our clients’ needs are met with professionalism and care. Our commitment to excellence drives us to continuously improve, innovate, and deliver the best possible results. We understand the importance of empathy, which allows us to truly connect with our clients and provide thoughtful, compassionate solutions in every situation.
+            </p>
+        </div>
+        <img src="images/Our Values.png" alt="Our Values">
+    </div>
+</div>
+</body>
+
+		<footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
@@ -179,8 +236,8 @@
             	<div class="block-23 mb-3">
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Basement, C-34, Lajpat Nagar-II, New Delhi-110024</span></li>
-	                <li><span class="icon icon-phone"></span><span class="text">+91-8860540197</span></a></li>
-	                <li><span class="icon icon-envelope"></span><span class="text">advdeepalipawar@gmail.com</span></a></li>
+	                <li><span class="icon icon-phone"></span><span class="text">+91-8860540197<br>+91-9871827911</span></a></li>
+	                <li><span class="icon icon-envelope"></span><span class="text">lexvantagelegal@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -206,7 +263,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p>Copyright &copy;2024 All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.pcmediahouse.com" target="_blank">PCMediaHouse</a></p>
+            <p>Copyright &copy;2024 All rights reserved | This website is designed with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.pcmediahouse.com" target="_blank">PCMediaHouse</a></p>
           </div>
         </div>
       </div>
